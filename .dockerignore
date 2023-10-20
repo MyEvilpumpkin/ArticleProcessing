@@ -1,0 +1,13 @@
+**/Dockerfile
+**/docker-compose.yml
+**/.dockerignore
+
+**/.git
+**/.gitignore
+
+**/.DS_Store
+
+**/.idea
+
+**/venv
+

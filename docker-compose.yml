@@ -1,0 +1,9 @@
+version: "3"
+services:
+  article_processing:
+    build: .
+    image: article_processing:latest
+    container_name: article_processing
+    ports:
+      - "80:80"
+    restart: on-failure
