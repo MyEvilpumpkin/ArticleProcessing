@@ -1,4 +1,4 @@
-from article_processing import define_genre, summarize, define_sensitive_topic
+﻿from article_processing import define_genre, summarize
 
 article_text = """
     С 1 октября российский Центробанк начал по-новому рассекречивать мошенников, напомнил резидент Экспертного клуба ЦСР Глеб Белавин. Теперь банки начали передавать регулятору данные о переводах, которые кажутся сомнительными.
@@ -11,5 +11,4 @@ article_text = """
 if __name__ == "__main__":
     print(define_genre(article_text))
     # print(summarize(article_text))
-    # print(define_sensitive_topic(article_text))
 
