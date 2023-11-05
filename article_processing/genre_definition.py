@@ -6,4 +6,4 @@ genres = ["спорт", "политика", "экономика", "здоров�
 
 def execute(text: str) -> str:
     classification_result = classifier(text, genres, multi_label=False)
-    return classification_result["labels"][0].capitalize()
+    return classification_result["labels"][0]
