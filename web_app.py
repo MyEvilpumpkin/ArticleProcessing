@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from starlette.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from article_processing import functions
+from article_processing import modules
 
 app = FastAPI()
 
@@ -20,12 +20,17 @@ class Article(BaseModel):
     text: str
 
 
-@app.post("/api/{function_name}")
-async def execute_function(function_name: str, article: Article):
-    if function_name in functions:
+@app.get("/api/modules")
+async def get_modules():
+    return modules
+
+
+@app.post("/api/modules/{module_name}")
+async def run_module(module_name: str, article: Article):
+    if module_name in modules:
         return {
-            "function_name": function_name,
-            "result": functions.get(function_name)(article.text)
+            "module_name": module_name,
+            "result": modules.get(module_name).get("function")(article.text)
         }
     else:
         raise HTTPException(status_code=404)
@@ -33,4 +38,3 @@ async def execute_function(function_name: str, article: Article):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=80)
-
