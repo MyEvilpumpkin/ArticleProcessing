@@ -8,7 +8,7 @@ def read_file(file_path):
     return file_name.lower(), file_content
 
 
-def test_genres_model_executor(file_path):
+def execute_genre_definition_test(file_path):
     file_name, article_text = read_file(file_path)
     defined_genre = define_genre(article_text)
     assert (
@@ -20,49 +20,49 @@ def test_genres_model_executor(file_path):
 
 def test_health_first_topic():
     file_path = 'test_articles/здоровье_1.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_health_second_topic():
     file_path = 'test_articles/здоровье_2.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_science_first_topic():
     file_path = 'test_articles/наука_1.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_science_second_topic():
     file_path = 'test_articles/наука_2.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_politic_first_topic():
     file_path = 'test_articles/политика_1.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_politic_second_topic():
     file_path = 'test_articles/политика_2.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_sport_first_topic():
     file_path = 'test_articles/спорт_1.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_sport_second_topic():
     file_path = 'test_articles/спорт_2.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_economic_first_topic():
     file_path = 'test_articles/экономика_1.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
 
 
 def test_economic_second_topic():
     file_path = 'test_articles/экономика_2.txt'
-    test_genres_model_executor(file_path)
+    execute_genre_definition_test(file_path)
