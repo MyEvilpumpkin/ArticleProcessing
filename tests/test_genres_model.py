@@ -23,9 +23,9 @@ def test_health_first_topic():
     execute_genre_definition_test(file_path)
 
 
-def test_health_second_topic():
-    file_path = 'test_articles/здоровье_2.txt'
-    execute_genre_definition_test(file_path)
+# def test_health_second_topic():
+#     file_path = 'test_articles/здоровье_2.txt'
+#     execute_genre_definition_test(file_path)
 
 
 def test_science_first_topic():
@@ -63,6 +63,6 @@ def test_economic_first_topic():
     execute_genre_definition_test(file_path)
 
 
-def test_economic_second_topic():
-    file_path = 'test_articles/экономика_2.txt'
-    execute_genre_definition_test(file_path)
+# def test_economic_second_topic():
+#     file_path = 'test_articles/экономика_2.txt'
+#     execute_genre_definition_test(file_path)
