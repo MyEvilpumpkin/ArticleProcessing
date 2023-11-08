@@ -10,7 +10,7 @@ COPY . /app
 
 WORKDIR /app
 
-CMD python3 web_app.py
+ENTRYPOINT ["python3"]
 
 
 
