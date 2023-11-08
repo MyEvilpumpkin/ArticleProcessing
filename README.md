@@ -10,5 +10,4 @@ Summarization | csebuetnlp/mT5_multilingual_XLSum | ✔️ |
 
 ### Streamlit
 
-![App file](streamlit_app.py)  
-![App demo](docs/streamlit_app_demo.mov)
+[![](https://docs.streamlit.io/logo.svg)App file](streamlit_app.py)
