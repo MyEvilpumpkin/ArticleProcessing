@@ -1,9 +1,18 @@
 version: "3"
 services:
-  article_processing:
+  article_processing_web:
     build: .
-    image: article_processing:latest
-    container_name: article_processing
+    image: article_processing
+    container_name: article_processing_web
+    command: "web_app.py"
     ports:
-      - "80:80"
+      - "8510:80"
+    restart: on-failure
+  article_processing_streamlit:
+    build: .
+    image: article_processing
+    container_name: article_processing_streamlit
+    command: "streamlit_app.py"
+    ports:
+      - "8511:8501"
     restart: on-failure
