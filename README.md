@@ -1,16 +1,19 @@
 # ArticleProcessing
 
+Application for processing news (and other) articles
+
 ## Used models
-Module | Model | Included in the app | Unit tests written
--|-|-|-
-Genre Definition | MoritzLaurer/mDeBERTa-v3-base-mnli-xnli | ✔️ | ✔️
-Summarization | csebuetnlp/mT5_multilingual_XLSum | ✔️ |
+Module | Model | Included in the app | Unit tests written | Contributor
+-|-|-|-|-
+Genre Definition | MoritzLaurer/mDeBERTa-v3-base-mnli-xnli | ✔️ | ✔️ | Dmitriy Tomin
+Summarization | csebuetnlp/mT5_multilingual_XLSum | ✔️ | | Dmitriy Tomin
 
 ## Web apps
 
 ### Streamlit
 
-[![](https://docs.streamlit.io/logo.svg)App file](streamlit_app.py)
+[![](https://docs.streamlit.io/logo.svg)App file](streamlit_app.py)  
+[![](https://docs.streamlit.io/logo.svg)Demo app](https://articleprocessing.streamlit.app) (some features are disabled)
 
 https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/ad4bf0ce-3e95-48a9-8f3d-ee4f62aa7f83
 
