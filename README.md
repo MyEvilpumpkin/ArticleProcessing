@@ -7,7 +7,7 @@ Module | Model | Included in the app | Unit tests written | Contributor
 -|-|-|-|-
 Genre Definition | MoritzLaurer/mDeBERTa-v3-base-mnli-xnli | ✔️ | ✔️ | Dmitriy Tomin
 Summarization | csebuetnlp/mT5_multilingual_XLSum | ✔️ | | Dmitriy Tomin
-
+Language detection | papluca/xlm-roberta-base-language-detection | | ✔️ | Artem Oleynik
 ## Web apps
 
 ### Streamlit
