@@ -9,7 +9,7 @@ article_text = """
 """
 
 if __name__ == "__main__":
-    print(define_genre(article_text))
+    # print(define_genre(article_text))
     print(detection_language(article_text))
     # print(summarize(article_text))
 
