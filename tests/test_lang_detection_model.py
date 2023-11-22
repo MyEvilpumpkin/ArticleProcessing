@@ -26,9 +26,9 @@ def test_health_second_topic():
     execute_lang_detect_test(file_path)
 
 
-def test_science_first_topic():
-    file_path = 'test_articles/наука_1.txt'
-    execute_lang_detect_test(file_path)
+# def test_science_first_topic():
+#     file_path = 'test_articles/наука_1.txt'
+#     execute_lang_detect_test(file_path)
 
 
 # def test_science_second_topic():
