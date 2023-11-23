@@ -12,10 +12,17 @@ Language detection | papluca/xlm-roberta-base-language-detection | | ✔️ | Ar
 
 ### Streamlit
 
+#### D.Tomin
 [![](https://docs.streamlit.io/logo.svg)App file](streamlit_app.py)  
 [![](https://docs.streamlit.io/logo.svg)Demo app](https://articleprocessing.streamlit.app) (some features are disabled)
 
 https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/ad4bf0ce-3e95-48a9-8f3d-ee4f62aa7f83
+
+#### A.Oleynik
+Model: ![papluca/xlm-roberta-base-language-detection](https://huggingface.co/papluca/xlm-roberta-base-language-detection)
+Run: streamlit run streamlit_lang_detect_app.py
+Details: Type the required text in the input field and press Ctrl+Enter. 
+The expected language of the entered text will appear below the input field.
 
 ### FastAPI
 
