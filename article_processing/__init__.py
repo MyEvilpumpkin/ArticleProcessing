@@ -19,3 +19,8 @@ modules = {
         "result_title": "Содержание"
     }
 }
+
+modules_without_functions = {}
+for module_name, module in modules.items():
+    modules_without_functions[module_name] = module.copy()
+    del modules_without_functions[module_name]["function"]
