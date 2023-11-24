@@ -1,11 +1,5 @@
 from article_processing import define_genre
-
-
-def read_file(file_path):
-    file_name = file_path.split('/')[-1].split('_')[0]
-    with open(file_path, 'r') as file:
-        file_content = file.read()
-    return file_name.lower(), file_content
+from libs.file_reader import read_file
 
 
 def execute_genre_definition_test(file_path):

@@ -1,4 +1,4 @@
-from transformers import pipeline
+from libs.pipeline_loader import pipeline
 
 classifier = pipeline("text-classification", "papluca/xlm-roberta-base-language-detection")
 
