@@ -2,15 +2,9 @@ from fastapi.testclient import TestClient
 
 from web_app import app
 from article_processing import modules_without_functions
+from libs.file_reader import read_file
 
 client = TestClient(app)
-
-
-def read_file(file_path):
-    file_name = file_path.split('/')[-1].split('_')[0]
-    with open(file_path, 'r') as file:
-        file_content = file.read()
-    return file_name.lower(), file_content
 
 
 def test_modules():
