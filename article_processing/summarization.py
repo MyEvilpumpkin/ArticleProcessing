@@ -1,4 +1,4 @@
-from transformers import pipeline
+from libs.pipeline_loader import pipeline
 
 summarizer = pipeline('summarization', model='d0rj/rut5-base-summ')
 

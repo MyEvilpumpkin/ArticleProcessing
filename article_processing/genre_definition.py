@@ -1,4 +1,4 @@
-from transformers import pipeline
+from libs.pipeline_loader import pipeline
 
 classifier = pipeline("zero-shot-classification", model="MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 genres = ["спорт", "политика", "экономика", "здоровье", "наука"]
