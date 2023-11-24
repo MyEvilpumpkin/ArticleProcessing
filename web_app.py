@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from starlette.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from article_processing import modules
+from article_processing import modules, modules_without_functions
 
 app = FastAPI()
 
@@ -22,7 +22,7 @@ class Article(BaseModel):
 
 @app.get("/api/modules")
 async def get_modules():
-    return modules
+    return modules_without_functions
 
 
 @app.post("/api/modules/{module_name}")
