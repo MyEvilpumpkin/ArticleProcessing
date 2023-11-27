@@ -3,6 +3,7 @@ import sys
 from .genre_definition import execute as define_genre
 from .language_detection import execute as detection_language
 from .summarization import execute as summarize
+from .question_answering import execute as answer_question
 
 sys.path.append('..')
 
@@ -21,6 +22,11 @@ modules = {
         "function": summarize,
         "title": "Краткий пересказ",
         "result_title": "Содержание"
+    },
+    "question_answering": {
+        "function": answer_question,
+        "title": "Ответ на вопрос",
+        "result_title": "Ответ"
     }
 }
 
