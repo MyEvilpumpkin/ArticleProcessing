@@ -8,6 +8,7 @@ Module | Model | Included in the app | Unit tests written | Contributor
 Genre Definition | MoritzLaurer/mDeBERTa-v3-base-mnli-xnli | ✔️ | ✔️ | Dmitriy Tomin
 Summarization | d0rj/rut5-base-summ | ✔️ | | Dmitriy Tomin
 Language detection | papluca/xlm-roberta-base-language-detection | | ✔️ | Artem Oleynik
+Question answering | timpal0l/mdeberta-v3-base-squad2 | | | Gleb Kovalevskii
 ## Web apps
 
 ### Streamlit
