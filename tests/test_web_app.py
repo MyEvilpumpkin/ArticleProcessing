@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 from web_app import app
 from article_processing import modules_without_functions
 from libs.file_reader import read_file
+from . import *
 
 client = TestClient(app)
 
@@ -13,13 +14,17 @@ def test_modules():
     assert response.json() == modules_without_functions
 
 
-def execute_genre_definition_test(file_path: str):
-    module_name = 'genre_definition'
-    genre, text = read_file(file_path)
-    response = client.post(
+def get_module_response(module_name: str, text: str):
+    return client.post(
         f'/api/modules/{module_name}',
         json={'text': text}
     )
+
+
+def execute_genre_definition_test(file_path: str):
+    module_name = 'genre_definition'
+    genre, text = read_file(file_path)
+    response = get_module_response(module_name, text)
     assert response.status_code == 200
     assert response.json() == {
         'module_name': module_name,
@@ -28,50 +33,40 @@ def execute_genre_definition_test(file_path: str):
 
 
 def test_health_1():
-    file_path = 'test_articles/здоровье_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(health_1)
 
 
 def test_health_2():
-    file_path = 'test_articles/здоровье_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(health_2)
 
 
 def test_science_1():
-    file_path = 'test_articles/наука_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(science_1)
 
 
 def test_science_2():
-    file_path = 'test_articles/наука_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(science_2)
 
 
 def test_politic_1():
-    file_path = 'test_articles/политика_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(politic_1)
 
 
 def test_politic_2():
-    file_path = 'test_articles/политика_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(politic_2)
 
 
 def test_sport_1():
-    file_path = 'test_articles/спорт_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(sport_1)
 
 
 def test_sport_2():
-    file_path = 'test_articles/спорт_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(sport_2)
 
 
 def test_economic_1():
-    file_path = 'test_articles/экономика_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(economic_1)
 
 
 def test_economic_2():
-    file_path = 'test_articles/экономика_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_genre_definition_test(economic_2)

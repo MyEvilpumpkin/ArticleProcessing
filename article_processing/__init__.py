@@ -1,7 +1,7 @@
 import sys
 
 from .genre_definition import execute as define_genre
-from .language_detection import execute as detection_language
+from .language_detection import execute as detect_language
 from .summarization import execute as summarize
 
 sys.path.append('..')
@@ -12,8 +12,8 @@ modules = {
         "title": "Определение жанра",
         "result_title": "Жанр"
     },
-    "language_classification": {
-        "function": detection_language,
+    "language_detection": {
+        "function": detect_language,
         "title": "Определение языка",
         "result_title": "Язык"
     },
