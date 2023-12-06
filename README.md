@@ -37,3 +37,17 @@ https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/3241c7f4-acd2
 
 https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/dd59326c-a48b-47ca-a9ad-7effe988213f
 
+### G.Kovalevskii
+**Model:** pipeline("question-answering", "timpal0l/mdeberta-v3-base-squad2")
+
+**Web app:** https://articleprocessing-a5opm98u8e8fx8z6hdk5va.streamlit.app/
+
+### Fast Api
+**Method:** POST /api/module/question_answering
+
+
+**Механизм работы**
+
+Метод принимает на вход текст, а также вопрос.
+
+В ответе получаем текст в котором описан ответ на вопрос по тексту.
