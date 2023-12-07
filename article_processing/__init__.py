@@ -5,7 +5,7 @@ from .language_detection import execute as detect_language
 from .summarization import execute as summarize
 from .translation import execute as translate
 
-sys.path.append('../../../Desktop/ArticleProcessing')
+sys.path.append('..')
 
 modules = {
     "genre_definition": {
