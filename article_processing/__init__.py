@@ -4,6 +4,7 @@ from .genre_definition import execute as define_genre
 from .language_detection import execute as detect_language
 from .summarization import execute as summarize
 from .translation import execute as translate
+from .sentiment_analysis import execute as analyze_sentiment
 
 sys.path.append('..')
 
@@ -27,6 +28,11 @@ modules = {
         "function": translate,
         "title": "Перевод",
         "result_title": "Результат перевода"
+    },
+    "sentiment_analysis": {
+        "function": analyze_sentiment,
+        "title": "Анализ тональности",
+        "result_title": "Тональность"
     }
 }
 
