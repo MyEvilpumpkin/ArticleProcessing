@@ -56,3 +56,13 @@ To run the FastAPI app:
 To run the Docker container:
 
 `bash docker run -p 8501:8501`
+
+## API Endpoints
+
+While using FastAPI option, application provides the following API endpoints:
+
+- `GET /api/modules`: Returns a list of all available modules. No request body is needed. The response is a JSON object where the keys are the module names and the values are objects containing information about each module.
+
+- `POST /api/modules/{module_name}`: Runs a specific module with the provided article text. The request body should be a JSON object with a single key, "text", containing the article text as a string. The `module_name` in the URL should be replaced with the name of the module you want to run. The response is a JSON object containing the module name and the result of running the module on the provided text.
+
+You can access interactive documentation for these endpoints by running the application and navigating to `/docs` on the application's base URL (e.g., `http://localhost:8000/docs` for a locally running application).
