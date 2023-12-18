@@ -27,35 +27,35 @@ You can set up and run ArticleProcessing in two ways: by installing the dependen
 
 1. Clone the repository:
 
-`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`.
+`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`
 
 2. Install the dependencies:
 
-`bash pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 ### Option 2: Use Docker
 
 1. Clone the repository:
 
-`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`.
+`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`
 
 2. Build the Docker image:
 
-`bash docker build -t articleprocessing .`
+`docker build -t articleprocessing`
 
 ## Usage
 
 To run the Streamlit app:
 
-`bash streamlit run streamlit_app.py`
+`streamlit run streamlit_app.py`
 
 To run the FastAPI app:
 
-`bash uvicorn web_app:app --reload`
+`uvicorn web_app:app --reload`
 
 To run the Docker container:
 
-`bash docker run -p 8501:8501`
+`docker run -p 8501:8501`
 
 ## API Endpoints
 
