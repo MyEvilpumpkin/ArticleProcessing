@@ -41,7 +41,7 @@ You can set up and run ArticleProcessing in two ways: by installing the dependen
 
 2. Build the Docker image:
 
-`docker build -t articleprocessing`
+`docker compose build article_processing`
 
 ## Usage
 
@@ -55,7 +55,7 @@ To run the FastAPI app:
 
 To run the Docker container:
 
-`docker run -p 8501:8501`
+`docker compose up -d article_processing_streamlit`
 
 ## API Endpoints
 
