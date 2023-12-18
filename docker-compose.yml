@@ -6,7 +6,7 @@ services:
     container_name: article_processing_web
     command: "web_app.py"
     ports:
-      - "8510:80"
+      - "8511:80"
     restart: on-failure
   article_processing_streamlit:
     build: .
@@ -14,5 +14,13 @@ services:
     container_name: article_processing_streamlit
     command: "streamlit_app.py"
     ports:
-      - "8511:8501"
+      - "8512:8501"
+    restart: on-failure
+  article_processing_streamlit_lite:
+    build: .
+    image: article_processing
+    container_name: article_processing_streamlit_lite
+    command: "streamlit_app_lite.py"
+    ports:
+      - "8513:8501"
     restart: on-failure
