@@ -3,13 +3,12 @@ from libs.pipeline_loader import pipeline
 classifier = pipeline("sentiment-analysis","blanchefort/rubert-base-cased-sentiment")
 
 def execute(text: str) -> str:
-    classification_result = classifier(text)[0]["label"]
-    sentiment = 'Тональность текста: ' + classification_result
-    if classification_result == 'NEUTRAL':
+    sentiment = classifier(text)[0]["label"]
+    if sentiment == 'NEUTRAL':
         return sentiment.replace('NEUTRAL','нейтральная')
-    elif classification_result == 'POSITIVE':
+    elif sentiment == 'POSITIVE':
         return sentiment.replace('POSITIVE','положительная')
-    elif classification_result == 'NEGATIVE':
+    elif sentiment == 'NEGATIVE':
         return sentiment.replace('NEGATIVE','негативная')
 
 
