@@ -1,8 +1,9 @@
 from article_processing import define_genre
 from libs.file_reader import read_file
+from . import *
 
 
-def execute_genre_definition_test(file_path):
+def execute_test(file_path):
     file_name, article_text = read_file(file_path)
     defined_genre = define_genre(article_text)
     assert (
@@ -13,50 +14,41 @@ def execute_genre_definition_test(file_path):
 
 
 def test_health_1():
-    file_path = 'test_articles/здоровье_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(health_1)
 
 
 def test_health_2():
-    file_path = 'test_articles/здоровье_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(health_2)
 
 
 def test_science_1():
-    file_path = 'test_articles/наука_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(science_1)
 
 
 def test_science_2():
-    file_path = 'test_articles/наука_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(science_2)
 
 
 def test_politic_1():
-    file_path = 'test_articles/политика_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(politic_1)
 
 
 def test_politic_2():
-    file_path = 'test_articles/политика_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(politic_2)
 
 
 def test_sport_1():
-    file_path = 'test_articles/спорт_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(sport_1)
 
 
 def test_sport_2():
-    file_path = 'test_articles/спорт_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(sport_2)
 
 
 def test_economic_1():
-    file_path = 'test_articles/экономика_1.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(economic_1)
 
 
 def test_economic_2():
-    file_path = 'test_articles/экономика_2.txt'
-    execute_genre_definition_test(file_path)
+    execute_test(economic_2)
+

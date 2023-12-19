@@ -1,38 +1,68 @@
 # ArticleProcessing
 
-Application for processing news (and other) articles
+ArticleProcessing is a Python application that uses advanced natural language processing techniques to analyze news articles. The application can determine the genre of a text, analyze its sentiment, detect the language, translate the text, and summarize the text. 
 
-## Used models
-Module | Model | Included in the app | Unit tests written | Contributor
--|-|-|-|-
-Genre Definition | MoritzLaurer/mDeBERTa-v3-base-mnli-xnli | ✔️ | ✔️ | Dmitriy Tomin
-Summarization | d0rj/rut5-base-summ | ✔️ | | Dmitriy Tomin
-Language detection | papluca/xlm-roberta-base-language-detection | | ✔️ | Artem Oleynik
-## Web apps
+The application uses various models from the Hugging Face Transformers library for these tasks, and also provides a user interface built with Streamlit and FastAPI. It can be deployed as a Docker container, making it easy to set up and run on any system.
 
-### Streamlit
+## Table of Contents
 
-#### D.Tomin
-[![](https://docs.streamlit.io/logo.svg)App file](streamlit_app.py)  
-[![](https://docs.streamlit.io/logo.svg)Demo app](https://articleprocessing.streamlit.app) (some features are disabled)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
 
-https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/ad4bf0ce-3e95-48a9-8f3d-ee4f62aa7f83
+## Features
 
-#### A.Oleynik
-**Model:** [papluca/xlm-roberta-base-language-detection](https://huggingface.co/papluca/xlm-roberta-base-language-detection)  
-**Run local:** streamlit run streamlit_app.py  
-**Details:** Type the required text in the input field and press Ctrl+Enter.  
-The expected language of the entered text will appear below the input field.
+- **Genre Definition**: Determines the genre of a given text. Uses the "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli" model for zero-shot classification.
+- **Sentiment Analysis**: Analyzes the sentiment of a given text. Uses the "blanchefort/rubert-base-cased-sentiment" model.
+- **Language Detection**: Detects the language of a given text. Uses the "papluca/xlm-roberta-base-language-detection" model.
+- **Translation**: Translates a given text from one language to another. Uses the "Helsinki-NLP/opus-mt-ru-en" model.
+- **Summarization**: Summarizes a given text. Uses the "d0rj/rut5-base-summ" model.
 
-![View of the working application](https://github.com/MyEvilpumpkin/ArticleProcessing/assets/13471304/8a4bfc0b-d6c1-48ce-977c-c26417b18556)
 
-### FastAPI
+## Installation
 
-[![](!https://fastapi.tiangolo.com/ru/img/icon-white.svg)App file](web_app.py)
+You can set up and run ArticleProcessing in two ways: by installing the dependencies and running it directly on your machine, or by building a Docker image and running it as a Docker container.
 
-https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/6d9f6047-a72e-43bd-9fbc-77e6a4733d2e
+### Option 1: Install dependencies
 
-https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/3241c7f4-acd2-4169-a604-2fc10c736158
+1. Clone the repository:
 
-https://github.com/MyEvilpumpkin/ArticleProcessing/assets/24656713/dd59326c-a48b-47ca-a9ad-7effe988213f
+`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`
 
+2. Install the dependencies:
+
+`pip install -r requirements.txt`
+
+### Option 2: Use Docker
+
+1. Clone the repository:
+
+`git clone https://github.com/MyEvilpumpkin/ArticleProcessing.git`
+
+2. Build the Docker image:
+
+`docker compose build article_processing`
+
+## Usage
+
+To run the Streamlit app:
+
+`streamlit run streamlit_app.py`
+
+To run the FastAPI app:
+
+`uvicorn web_app:app --reload`
+
+To run the Docker container:
+
+`docker compose up -d article_processing_streamlit`
+
+## API Endpoints
+
+While using FastAPI option, application provides the following API endpoints:
+
+- `GET /api/modules`: Returns a list of all available modules. No request body is needed. The response is a JSON object where the keys are the module names and the values are objects containing information about each module.
+
+- `POST /api/modules/{module_name}`: Runs a specific module with the provided article text. The request body should be a JSON object with a single key, "text", containing the article text as a string. The `module_name` in the URL should be replaced with the name of the module you want to run. The response is a JSON object containing the module name and the result of running the module on the provided text.
+
+You can access interactive documentation for these endpoints by running the application and navigating to `/docs` on the application's base URL (e.g., `http://localhost:8000/docs` for a locally running application).
