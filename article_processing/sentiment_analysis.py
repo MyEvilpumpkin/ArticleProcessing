@@ -5,9 +5,10 @@ classifier = pipeline('sentiment-analysis', 'blanchefort/rubert-base-cased-senti
 
 def execute(text: str) -> str:
     sentiment = classifier(text)[0]['label']
-    if sentiment == 'NEUTRAL':
-        return sentiment.replace('NEUTRAL', 'нейтральная')
-    elif sentiment == 'POSITIVE':
-        return sentiment.replace('POSITIVE', 'положительная')
+
+    if sentiment == 'POSITIVE':
+        return 'позитивная'
     elif sentiment == 'NEGATIVE':
-        return sentiment.replace('NEGATIVE', 'негативная')
+        return 'негативная'
+    elif sentiment == 'NEUTRAL':
+        return 'нейтральная'
