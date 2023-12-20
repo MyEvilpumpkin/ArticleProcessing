@@ -11,3 +11,7 @@ sport_1 = 'test_articles/спорт_1.txt'
 sport_2 = 'test_articles/спорт_2.txt'
 economic_1 = 'test_articles/экономика_1.txt'
 economic_2 = 'test_articles/экономика_2.txt'
+
+positive_1 = 'test_articles/позитивная_1.txt'
+negative_1 = 'test_articles/негативная_1.txt'
+neutral_1 = 'test_articles/нейтральная_1.txt'

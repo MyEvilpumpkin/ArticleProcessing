@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 from article_processing import modules, modules_without_functions
 
+
 app = FastAPI()
 
 app.add_middleware(
@@ -20,11 +21,16 @@ class Article(BaseModel):
     text: str
 
 
-@app.get("/api/modules", summary="Get Modules", description="Returns a list of all available modules.")
+@app.get("/api/modules",
+         summary="Get Modules",
+         description="Returns a list of all available modules.")
 async def get_modules():
     return modules_without_functions
 
-@app.post("/api/modules/{module_name}", summary="Run Module", description="Runs a specific module with the provided article text.")
+
+@app.post("/api/modules/{module_name}",
+          summary="Run Module",
+          description="Runs a specific module with the provided article text.")
 async def run_module(module_name: str, article: Article):
     if module_name in modules:
         return {

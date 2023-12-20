@@ -6,11 +6,7 @@ from . import *
 def execute_test(file_path):
     file_name, article_text = read_file(file_path)
     defined_genre = define_genre(article_text)
-    assert (
-        file_name == defined_genre.lower()
-    ), ( 
-        f'There was no match between the genre and the name in file {file_path}'
-    )
+    assert file_name == defined_genre.lower(), f'Expected {file_name}, but got {defined_genre}'
 
 
 def test_health_1():
