@@ -1,6 +1,7 @@
 from article_processing import analyze_sentiment
 from libs.file_reader import read_file
 
+
 def execute_test(file_path, expected_sentiment):
     _, article_text = read_file(file_path)
     sentiment = analyze_sentiment(article_text)

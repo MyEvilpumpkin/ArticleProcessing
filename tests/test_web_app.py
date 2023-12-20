@@ -5,6 +5,7 @@ from article_processing import modules_without_functions
 from libs.file_reader import read_file
 from . import *
 
+
 client = TestClient(app)
 
 
