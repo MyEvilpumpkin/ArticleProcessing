@@ -1,4 +1,4 @@
-﻿from article_processing import *
+﻿from article_processing import analyze_sentiment
 from libs.file_reader import read_file
 
 _, article_text = read_file("test_articles/экономика_2.txt")
