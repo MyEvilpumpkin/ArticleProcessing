@@ -3,7 +3,7 @@ import sys
 import streamlit as st
 from streamlit.web import cli as stcli
 
-from article_processing import modules
+from modules import modules
 
 
 @st.cache_resource

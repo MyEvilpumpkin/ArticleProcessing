@@ -1,4 +1,4 @@
-from article_processing import analyze_sentiment
+from modules import analyze_sentiment
 from libs.file_reader import read_file
 from . import positive_1, negative_1, neutral_1
 

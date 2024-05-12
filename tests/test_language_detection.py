@@ -1,4 +1,4 @@
-from article_processing import detect_language
+from modules import detect_language
 from libs.file_reader import read_file
 from . import health_1, health_2, economic_1, economic_2
 

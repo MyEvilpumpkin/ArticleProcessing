@@ -1,4 +1,4 @@
-from article_processing import define_genre
+from modules import define_genre
 from libs.file_reader import read_file
 from . import health_1, health_2, science_1, science_2, politic_1, politic_2, sport_1, sport_2, economic_1, economic_2
 
