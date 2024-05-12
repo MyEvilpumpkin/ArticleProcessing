@@ -8,4 +8,6 @@ COPY . /app
 
 WORKDIR /app
 
+ENV PYTHONPATH=/app
+
 ENTRYPOINT ["python3"]
