@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from starlette.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from article_processing import modules, modules_without_functions
+from modules import modules, modules_without_functions
 
 
 app = FastAPI()
