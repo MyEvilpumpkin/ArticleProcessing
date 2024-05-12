@@ -1,0 +1,11 @@
+OpenAI has a livestreamed announcement planned for 10 a.m. PT on Monday — but it’s trying to keep expectations under control.
+
+The company is describing the event as “a chance to demo some ChatGPT and GPT-4 updates.” CEO Sam Altman, meanwhile, promoted the event with the message, “not gpt-5, not a search engine, but we’ve been hard at work on some new stuff we think people will love! feels like magic to me.”
+
+Altman’s wording was presumably alluding to a Reuters report published earlier this week, suggesting that OpenAI plans to announce an AI-powered search product on Monday — stealing some thunder from the Google I/O developer conference, which starts Tuesday. The report also said the announcement date “is subject to change.”
+
+The Information and Bloomberg had previously reported that OpenAI has a search product in development. According to The Information, the product will be partly powered by Bing (Microsoft is a major OpenAI investor and partner); Bloomberg said it will work as a feature within ChatGPT, allowing the chatbot to search the web and cite sources — making it less of a black box that returns answers of unknown origin.
+
+So in theory, at least, OpenAI could announce a search feature Monday and Altman’s insistence that it’s “not a search engine” could still be true. We’ll see.
+
+The livestream starts at 10 a.m. PT on Monday. You can watch on the OpenAI website.

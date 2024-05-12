@@ -5,8 +5,8 @@ from test_articles import positive_1, negative_1, neutral_1
 
 def execute_test(file_path):
     expected_sentiment, article_text = read_file(file_path)
-    sentiment = analyze_sentiment(article_text)
-    assert sentiment == expected_sentiment, f'Expected {expected_sentiment}, but got {sentiment}'
+    actual_sentiment = analyze_sentiment(article_text)
+    assert expected_sentiment == actual_sentiment, f'Expected {expected_sentiment}, but got {actual_sentiment}'
 
 
 def test_positive_1():

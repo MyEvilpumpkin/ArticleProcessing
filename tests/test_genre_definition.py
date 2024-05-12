@@ -6,9 +6,9 @@ from test_articles import (
 
 
 def execute_test(file_path):
-    file_name, article_text = read_file(file_path)
-    defined_genre = define_genre(article_text)
-    assert file_name == defined_genre.lower(), f'Expected {file_name}, but got {defined_genre}'
+    expected_genre, article_text = read_file(file_path)
+    actual_genre = define_genre(article_text).lower()
+    assert expected_genre == actual_genre, f'Expected {expected_genre}, but got {actual_genre}'
 
 
 def test_health_1():

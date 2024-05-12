@@ -1,0 +1,11 @@
+OpenAI ha programmato un annuncio in livestreaming per le 10.00 PT di lunedì, ma sta cercando di mantenere le aspettative sotto controllo.
+
+L'azienda descrive l'evento come “un'occasione per dimostrare alcuni aggiornamenti di ChatGPT e GPT-4”. L'amministratore delegato Sam Altman, nel frattempo, ha promosso l'evento con il messaggio: “Non è un gpt-5, non è un motore di ricerca, ma abbiamo lavorato duramente su alcune novità che pensiamo piaceranno alla gente! Mi sembra una magia”.
+
+Le parole di Altman alludevano presumibilmente a un rapporto di Reuters pubblicato all'inizio della settimana, secondo il quale OpenAI avrebbe annunciato un prodotto di ricerca alimentato dall'intelligenza artificiale lunedì, rubando così un po' di spazio alla conferenza degli sviluppatori Google I/O, che inizia martedì. Il rapporto diceva anche che la data dell'annuncio “è soggetta a cambiamenti”.
+
+The Information e Bloomberg avevano precedentemente riferito che OpenAI ha un prodotto di ricerca in fase di sviluppo. Secondo The Information, il prodotto sarà in parte alimentato da Bing (Microsoft è uno dei principali investitori e partner di OpenAI); Bloomberg ha affermato che funzionerà come funzione all'interno di ChatGPT, consentendo al chatbot di effettuare ricerche sul web e di citare le fonti, rendendolo meno una scatola nera che restituisce risposte di origine sconosciuta.
+
+Quindi, almeno in teoria, OpenAI potrebbe annunciare una funzione di ricerca lunedì e l'insistenza di Altman sul fatto che “non è un motore di ricerca” potrebbe essere ancora vera. Staremo a vedere.
+
+Il livestream inizia lunedì alle 10.00 PT. È possibile guardare sul sito web di OpenAI.

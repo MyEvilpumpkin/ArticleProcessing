@@ -1,0 +1,11 @@
+OpenAI hat eine Livestream-Ankündigung für 10 Uhr PT am Montag geplant - aber es versucht, die Erwartungen unter Kontrolle zu halten.
+
+Das Unternehmen beschreibt die Veranstaltung als „eine Chance, einige ChatGPT- und GPT-4-Updates zu demonstrieren“. CEO Sam Altman bewarb die Veranstaltung mit der Nachricht: „Nicht GPT-5, keine Suchmaschine, aber wir haben hart an neuen Dingen gearbeitet, von denen wir glauben, dass die Leute sie lieben werden! fühlt sich für mich wie Magie an.
+
+Altmans Formulierung spielte vermutlich auf einen Reuters-Bericht an, der Anfang dieser Woche veröffentlicht wurde und besagt, dass OpenAI plant, am Montag ein KI-gestütztes Suchprodukt anzukündigen - und damit der Google I/O-Entwicklerkonferenz, die am Dienstag beginnt, die Show zu stehlen. In dem Bericht hieß es außerdem, dass sich das Datum der Ankündigung noch ändern kann“.
+
+The Information und Bloomberg hatten zuvor berichtet, dass OpenAI ein Suchprodukt in der Entwicklung hat. Laut The Information wird das Produkt teilweise von Bing angetrieben werden (Microsoft ist ein wichtiger Investor und Partner von OpenAI); Bloomberg sagte, dass es als eine Funktion innerhalb von ChatGPT funktionieren wird, die es dem Chatbot ermöglicht, das Web zu durchsuchen und Quellen zu zitieren - was es weniger zu einer Blackbox macht, die Antworten unbekannter Herkunft zurückgibt.
+
+Zumindest theoretisch könnte OpenAI also am Montag eine Suchfunktion ankündigen, und Altmans Behauptung, es sei „keine Suchmaschine“, könnte immer noch zutreffen. Wir werden sehen.
+
+Der Livestream beginnt am Montag um 10.00 Uhr PT. Sie können ihn auf der OpenAI-Website verfolgen.
