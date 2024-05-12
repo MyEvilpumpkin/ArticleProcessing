@@ -1,6 +1,6 @@
 from modules import detect_language
 from libs.file_reader import read_file
-from test_articles import ru_1, en_1, de_1, fr_1, it_1
+from tests.articles import ru_1, en_1, de_1, fr_1, it_1
 
 
 def execute_test(file_path):

@@ -1,6 +1,6 @@
 import os
 
-_test_articles_dir = 'test_articles'
+_test_articles_dir = os.path.join('tests', 'articles')
 
 
 def _get_article_path(article_name: str) -> str:
