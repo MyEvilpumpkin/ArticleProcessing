@@ -1,11 +1,8 @@
-﻿from article_processing import analyze_sentiment
-from libs.file_reader import read_file
+﻿from libs.file_reader import read_file
 
-_, article_text = read_file("test_articles/экономика_2.txt")
+from modules import detect_language as module
+from test_articles import science_1 as article_file_path
 
 if __name__ == "__main__":
-    # print(define_genre(article_text))
-    # print(detect_language(article_text))
-    # print(summarize(article_text))
-    # print(translate(article_text))
-    print(analyze_sentiment(article_text))
+    _, article_text = read_file(article_file_path)
+    print(module(article_text))
