@@ -1,6 +1,6 @@
 from modules import detect_language
 from libs.file_reader import read_file
-from . import health_1, health_2, economic_1, economic_2
+from test_articles import health_1, health_2, economic_1, economic_2
 
 
 def execute_test(file_path):

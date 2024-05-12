@@ -1,6 +1,6 @@
 from modules import analyze_sentiment
 from libs.file_reader import read_file
-from . import positive_1, negative_1, neutral_1
+from test_articles import positive_1, negative_1, neutral_1
 
 
 def execute_test(file_path):

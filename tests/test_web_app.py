@@ -3,8 +3,9 @@ from fastapi.testclient import TestClient
 from web_app import app
 from modules import modules_without_functions
 from libs.file_reader import read_file
-from . import health_1, health_2, science_1, science_2, politic_1, politic_2, sport_1, sport_2, economic_1, economic_2
-
+from test_articles import (
+    health_1, health_2, science_1, science_2, politic_1, politic_2, sport_1, sport_2, economic_1, economic_2
+)
 
 client = TestClient(app)
 
