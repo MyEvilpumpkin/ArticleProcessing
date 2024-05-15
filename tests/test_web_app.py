@@ -22,10 +22,10 @@ def get_module_response(module_name: str, text: str):
     )
 
 
-@pytest.mark.parametrize('file_path', articles)
-def test_genre_definition(file_path: str):
+@pytest.mark.parametrize('article_path', articles)
+def test_genre_definition(article_path: str):
     module_name = 'genre_definition'
-    genre, text = read_file(file_path)
+    genre, text = read_file(article_path)
     response = get_module_response(module_name, text)
     assert response.status_code == 200
     assert response.json() == {
