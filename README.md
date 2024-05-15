@@ -66,3 +66,7 @@ While using FastAPI option, application provides the following API endpoints:
 - `POST /api/modules/{module_name}`: Runs a specific module with the provided article text. The request body should be a JSON object with a single key, "text", containing the article text as a string. The `module_name` in the URL should be replaced with the name of the module you want to run. The response is a JSON object containing the module name and the result of running the module on the provided text.
 
 You can access interactive documentation for these endpoints by running the application and navigating to `/docs` on the application's base URL (e.g., `http://localhost:8000/docs` for a locally running application).
+
+## DVC Storage
+
+[Google Drive](https://drive.google.com/drive/folders/1Az-aH4Vnxvo1D7pdFVPiJ6Sb1o7UDj6X)
