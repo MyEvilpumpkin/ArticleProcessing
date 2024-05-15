@@ -4,6 +4,11 @@
 
 **/.git
 **/.gitignore
+**/.github
+
+**/.dvc
+
+**/tests
 
 **/.DS_Store
 
