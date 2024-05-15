@@ -1,3 +1,4 @@
+import os
 import sys
 import requests
 
@@ -5,7 +6,7 @@ import streamlit as st
 from streamlit.web import cli as stcli
 
 
-API_URL = "http://127.0.0.1:8511"
+API_URL = f"http://{'host.docker.internal' if os.getenv('DOCKER', '') == 'True' else '127.0.0.1'}:8511"
 
 
 @st.cache_resource
