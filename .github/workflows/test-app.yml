@@ -46,7 +46,3 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
-
-      - name: Test Docker build
-        run: |
-          docker compose build
