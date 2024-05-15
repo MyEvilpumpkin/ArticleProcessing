@@ -2,26 +2,26 @@ services:
   article_processing:
     build: .
     image: article_processing
-  article_processing_web:
+  api:
     image: article_processing
-    container_name: article_processing_web
-    command: "apps/web_app.py"
+    container_name: article_processing_api
+    command: "run.py api_app"
     ports:
       - "8511:80"
     restart: on-failure
-  article_processing_streamlit_lite:
+  streamlit_with_api:
     image: article_processing
     container_name: article_processing_streamlit_lite
-    command: "apps/streamlit_app_lite.py"
+    command: "run.py streamlit_app_lite"
     ports:
       - "8512:8501"
     restart: on-failure
     depends_on:
-      - article_processing_web
-  article_processing_streamlit:
+      - api
+  streamlit:
     image: article_processing
     container_name: article_processing_streamlit
-    command: "apps/streamlit_app.py"
+    command: "run.py streamlit_app"
     ports:
       - "8513:8501"
     restart: on-failure

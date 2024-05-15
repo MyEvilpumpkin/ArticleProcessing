@@ -47,15 +47,23 @@ You can set up and run ArticleProcessing in two ways: by installing the dependen
 
 To run the Streamlit app:
 
-`streamlit run streamlit_app.py`
+`python run.py streamlit_app`
 
 To run the FastAPI app:
 
-`uvicorn web_app:app --reload`
+`python run.py api_app`
 
-To run the Docker container:
+To run the Streamlit app Docker container:
 
-`docker compose up -d article_processing_streamlit`
+`docker compose up -d streamlit`
+
+To run the FastAPI app Docker container:
+
+`docker compose up -d api`
+
+To run both apps Docker containers (with streamlit_lite app):
+
+`docker compose up -d streamlit_with_api`
 
 ## API Endpoints
 

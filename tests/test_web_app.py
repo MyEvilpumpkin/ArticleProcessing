@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from apps.web_app import app
+from apps.api_app import app
 from modules import modules_without_functions
 from libs.file_reader import read_file
 from tests.articles import (

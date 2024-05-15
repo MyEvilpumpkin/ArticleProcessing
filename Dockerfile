@@ -10,6 +10,6 @@ COPY . /app
 
 WORKDIR /app
 
-ENV PYTHONPATH=/app
+ENV DOCKER=True
 
 ENTRYPOINT ["python3"]
