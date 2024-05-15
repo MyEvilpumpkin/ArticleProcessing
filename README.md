@@ -78,3 +78,7 @@ You can access interactive documentation for these endpoints by running the appl
 ## DVC Storage
 
 [Google Drive](https://drive.google.com/drive/folders/1Az-aH4Vnxvo1D7pdFVPiJ6Sb1o7UDj6X)
+
+## Docker Images Storage
+
+[Docker Hub](https://hub.docker.com/r/myevilpumpkin/article_processing)
