@@ -13,9 +13,6 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Prepare env
-        run: sudo apt install -y gcc python3-dev
-
       - name: Checkout
         uses: actions/checkout@v4
 
