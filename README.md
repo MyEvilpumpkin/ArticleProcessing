@@ -47,15 +47,23 @@ You can set up and run ArticleProcessing in two ways: by installing the dependen
 
 To run the Streamlit app:
 
-`streamlit run streamlit_app.py`
+`python run.py streamlit_app`
 
 To run the FastAPI app:
 
-`uvicorn web_app:app --reload`
+`python run.py api_app`
 
-To run the Docker container:
+To run the Streamlit app Docker container:
 
-`docker compose up -d article_processing_streamlit`
+`docker compose up -d streamlit`
+
+To run the FastAPI app Docker container:
+
+`docker compose up -d api`
+
+To run both apps Docker containers (with streamlit_lite app):
+
+`docker compose up -d streamlit_with_api`
 
 ## API Endpoints
 
@@ -66,3 +74,11 @@ While using FastAPI option, application provides the following API endpoints:
 - `POST /api/modules/{module_name}`: Runs a specific module with the provided article text. The request body should be a JSON object with a single key, "text", containing the article text as a string. The `module_name` in the URL should be replaced with the name of the module you want to run. The response is a JSON object containing the module name and the result of running the module on the provided text.
 
 You can access interactive documentation for these endpoints by running the application and navigating to `/docs` on the application's base URL (e.g., `http://localhost:8000/docs` for a locally running application).
+
+## DVC Storage
+
+[Google Drive](https://drive.google.com/drive/folders/1Az-aH4Vnxvo1D7pdFVPiJ6Sb1o7UDj6X)
+
+## Docker Images Storage
+
+[Docker Hub](https://hub.docker.com/r/myevilpumpkin/article_processing)
